@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Same head as index.html -->
+</head>
+<body>
+    <!-- Navigation (same as index.html) -->
+    
+    <section class="demo-form-section">
+        <div class="container">
+            <h1>Book Your Free Demo Class</h1>
+            <form id="demoForm" action="process-demo.php" method="POST" class="demo-form">
+                <div class="form-group">
+                    <input type="text" name="name" placeholder="Full Name *" required>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Email *" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" name="phone" placeholder="Phone *" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <select name="course" required>
+                        <option value="">Select Course</option>
+                        <option value="Class XI Accountancy (CBSE)">Class XI Accountancy (CBSE)</option>
+                        <option value="Class XII Accountancy (CBSE)">Class XII Accountancy (CBSE)</option>
+                        <option value="B.Com Accountancy">B.Com Accountancy</option>
+                        <option value="M.Com Accountancy">M.Com Accountancy</option>
+                        <option value="CFA">CFA Level-wise</option>
+                        <option value="CA">CA Level-wise Papers</option>
+                    </select>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <select name="batch_preference" required>
+                            <option value="">Batch Preference</option>
+                            <option value="Offline">Offline</option>
+                            <option value="Online">Online</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <select name="preferred_time">
+                            <option value="">Preferred Time (Mon-Sat 4-8 PM)</option>
+                            <option value="4-5 PM">4-5 PM</option>
+                            <option value="5-6 PM">5-6 PM</option>
+                            <option value="6-7 PM">6-7 PM</option>
+                            <option value="7-8 PM">7-8 PM</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <textarea name="message" placeholder="Any Questions? (Optional)"></textarea>
+                </div>
+                <button type="submit" class="submit-btn">
+                    <i class="fas fa-paper-plane"></i> Submit – Book Free Demo Class
+                </button>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
